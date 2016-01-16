@@ -1,0 +1,16 @@
+[
+  {
+    "outputFileName": "Scripts/bundle.js",
+    "inputFiles": [
+      "Scripts/googleAnalytics.js",
+      "Scripts/jquery-2.2.0.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/bundle.css",
+    "inputFiles": [
+      "Content/bootstrap.css",
+      "Content/Site.css"
+    ]
+  }
+]
