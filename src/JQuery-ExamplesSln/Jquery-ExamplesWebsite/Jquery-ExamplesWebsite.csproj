@@ -207,6 +207,7 @@
     <Content Include="Libs\EcmaScript.NET.dll" />
     <Content Include="Libs\Yahoo.Yui.Compressor.dll" />
     <Content Include="Libs\YordanMinificationHandlers.dll" />
+    <Content Include="Robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bundle.js" />
