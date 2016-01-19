@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>attributeContains demo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <input name="man-news">
+    <input name="milkman">
+    <input name="letterman2">
+    <input name="newmilk">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        console.time("a");
+        var t0 = performance.now();
+        $("input[name*='man']").val("has man in it!");
+        var t1 = performance.now();
+        console.timeEnd("a");
+        console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
+       
+    </script>
+</body>
+</html>

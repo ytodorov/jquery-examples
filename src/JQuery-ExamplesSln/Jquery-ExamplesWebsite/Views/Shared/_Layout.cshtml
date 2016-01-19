@@ -7,18 +7,21 @@
     <title>jQuery Examples</title>
     @*<link href="~/content/bundle.min.css" rel="stylesheet" />*@
     <link href="@Fingerprint.Tag("/content/bundle.min.css")" rel="stylesheet" />
- 
+   
 </head>
 <body>
     <div>
         @RenderBody()
-        <hr />
+        @Html.Kendo().TreeView().Name("tvJQueryExamples").Items(items =>
+   { items.Add().Text("Selection").Url("\\Home\\Index"); }
+   ).Deferred()
         <footer>
             <p>&copy; @DateTime.Now.Year jQuery Examples</p>
         </footer>
     </div>
     @*<script src="~/scripts/bundle.min.js"></script>*@
-    <script src="@Fingerprint.Tag("/scripts/bundle.min.js")"></script>
+    <script src="@Fingerprint.Tag("/scripts/bundle.js")"></script>
+    @Html.Kendo().DeferredScripts()
     @RenderSection("scripts", required: false)
 </body>
 </html>

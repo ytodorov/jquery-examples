@@ -1,16 +1,17 @@
 [
   {
-    "outputFileName": "Scripts/bundle.js",
-    "inputFiles": [
-      "Scripts/googleAnalytics.js",
-      "Scripts/jquery-2.2.0.js"
-    ]
-  },
-  {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
       "Content/bootstrap.css",
+      "content/web/kendo.common.css",
+      "content/web/kendo.silver.css",
       "Content/Site.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/bundle.js",
+    "inputFiles": [
+      "Scripts/bundle.js"
     ]
   }
 ]

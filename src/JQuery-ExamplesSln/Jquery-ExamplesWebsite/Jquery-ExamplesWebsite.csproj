@@ -46,6 +46,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EcmaScript.NET, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\EcmaScript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET MVC Q1 2016\wrappers\aspnetmvc\Examples\VS2015\Kendo.Mvc.Examples\Libs\Kendo.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -140,6 +147,14 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Yahoo.Yui.Compressor, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+    <Reference Include="YordanMinificationHandlers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\YordanMinificationHandlers.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -166,6 +181,22 @@
     <Content Include="Content\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
+    <Content Include="Content\web\kendo.common.css" />
+    <Content Include="Content\web\kendo.silver.css" />
+    <Content Include="Content\web\Silver\editor.png" />
+    <Content Include="Content\web\Silver\imagebrowser.png" />
+    <Content Include="Content\web\Silver\indeterminate.gif" />
+    <Content Include="Content\web\Silver\loading-image.gif" />
+    <Content Include="Content\web\Silver\loading.gif" />
+    <Content Include="Content\web\Silver\loading_2x.gif" />
+    <Content Include="Content\web\Silver\markers.png" />
+    <Content Include="Content\web\Silver\markers_2x.png" />
+    <Content Include="Content\web\Silver\slider-h.gif" />
+    <Content Include="Content\web\Silver\slider-v.gif" />
+    <Content Include="Content\web\Silver\sprite.png" />
+    <Content Include="Content\web\Silver\sprite_2x.png" />
+    <Content Include="Content\web\Silver\sprite_kpi.png" />
+    <Content Include="Content\web\Silver\sprite_kpi_2x.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -173,6 +204,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Libs\EcmaScript.NET.dll" />
+    <Content Include="Libs\Yahoo.Yui.Compressor.dll" />
+    <Content Include="Libs\YordanMinificationHandlers.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bundle.js" />
@@ -189,11 +223,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="JQueryExamples.sitemap" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />
     <Content Include="Scripts\jquery-2.2.0.min.js" />
+    <Content Include="Scripts\kendo.all.js" />
+    <Content Include="Scripts\kendo.aspnetmvc.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="TestPage.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
