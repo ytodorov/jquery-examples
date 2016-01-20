@@ -1,17 +1,28 @@
 [
   {
+    "outputFileName": "Scripts/bundle.js",
+    "inputFiles": [
+      "scripts/googleanalytics.js",
+      "scripts/jquery-2.2.0.js",
+      "scripts/kendo.all.js",
+      "scripts/kendo.aspnetmvc.js",
+      "scripts/codemirror-3.01/codemirror.js",
+      "scripts/codemirror-3.01/mode/javascript.js",
+      "scripts/codemirror-3.01/mode/xml.js",
+      "scripts/codemirror-3.01/mode/css.js",
+      "scripts/codemirror-3.01/mode/htmlmixed.js",
+      "scripts/codemirror-3.0/addon/edit/matchbrackets.js"
+    ]
+  },
+  {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
       "Content/bootstrap.css",
       "content/web/kendo.common.css",
       "content/web/kendo.silver.css",
+      "content/codemirror-3.01/codemirror.css",
+      "content/codemirror-3.0/theme/neat.css",
       "Content/Site.css"
-    ]
-  },
-  {
-    "outputFileName": "Scripts/bundle.js",
-    "inputFiles": [
-      "Scripts/bundle.js"
     ]
   }
 ]

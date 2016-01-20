@@ -7,7 +7,8 @@
 @(
         Html.Kendo().PanelBar().Name("firstTest").Items(items =>
         {
-        items.Add().Text("HTML").Content(Html.Encode(@"<!doctype html>
+        items.Add().Expanded(true).Text("HTML").Content("<textarea id='code' name='code' style='height: 1px;width: 1px;' > " + 
+            Html.Encode(@"<!doctype html>
 <html lang="" en"">
 <head>
     <meta charset="" utf-8"">
@@ -24,6 +25,25 @@ var elementCount = $( ""*"" ).css( ""border"", ""3px solid red"" ).length;
 $( ""body"" ).prepend( ""<h3>"" + elementCount + "" elements found</h3>"" );
     </script>
 </body>
-</html>"));
+</html>") + "</textarea>");
         }).Deferred()
 )
+
+@section scripts
+{
+<script>
+    //$(document).ready(() => {
+     
+        
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            lineNumbers: true,
+            styleActiveLine: true,
+            matchBrackets: true,
+            theme: "neat"
+        }) 
+        debugger;
+        //$("#code").hide().fadeIn('fast');
+
+    //});
+</script>
+}
