@@ -32,18 +32,11 @@ $( ""body"" ).prepend( ""<h3>"" + elementCount + "" elements found</h3>"" );
 @section scripts
 {
 <script>
-    //$(document).ready(() => {
-     
-        
         var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
             lineNumbers: true,
-            styleActiveLine: true,
+            styleActiveLine: false,
             matchBrackets: true,
             theme: "neat"
-        }) 
-        debugger;
-        //$("#code").hide().fadeIn('fast');
-
-    //});
+        })        
 </script>
 }
