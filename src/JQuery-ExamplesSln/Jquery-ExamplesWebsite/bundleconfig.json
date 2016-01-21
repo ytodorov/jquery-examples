@@ -12,7 +12,8 @@
       "scripts/codemirror-3.01/mode/css.js",
       "scripts/codemirror-3.01/mode/htmlmixed.js",
       "scripts/codemirror-3.0/addon/selection/active-line.js",
-      "scripts/codemirror-3.0/addon/edit/matchbrackets.js"
+      "scripts/codemirror-3.0/addon/edit/matchbrackets.js",
+      "scripts/YordanCreateCodeEditors.js"
     ]
   },
   {

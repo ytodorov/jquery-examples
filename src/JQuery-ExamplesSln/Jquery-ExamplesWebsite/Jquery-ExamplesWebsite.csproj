@@ -346,6 +346,9 @@
     <Content Include="Scripts\jquery-2.2.0.min.js" />
     <Content Include="Scripts\kendo.all.js" />
     <Content Include="Scripts\kendo.aspnetmvc.js" />
+    <Content Include="Scripts\kendo.core.js" />
+    <Content Include="Scripts\kendo.panelbar.js" />
+    <Content Include="Scripts\kendo.web.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="TestPage.html" />
     <Content Include="Web.config">
@@ -379,6 +382,7 @@
     <TypeScriptCompile Include="Scripts\typings\codemirror\codemirror.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\codemirror\searchcursor.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\YordanCreateCodeEditors.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
