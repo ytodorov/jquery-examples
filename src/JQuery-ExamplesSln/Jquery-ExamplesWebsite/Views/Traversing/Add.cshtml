@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h1>Add</h1>
+<a href="http://api.jquery.com/add/#add-selector" rel="nofollow">Add</a>
+<div class="k-block k-info-colored"></div>
+@(
+        Html.Kendo().PanelBar().Name("add").Items(items =>
+        {
+            items.Add().Expanded(true).Text("HTML").Content("<textarea id='code' name='code' class='code' style='height: 1px;width: 1px;' > " +
+                Html.Encode(@"<!doctype html>
+<html lang="" en"">
+<head>
+    <meta charset="" utf-8"">
+    <title>all demo</title>
+    <script src="" https//code.jquery.com/jquery-1.10.2.js""></script>
+</head>
+<body>
+    <div>DIV</div>
+    <p>P<button>BUTTON</button></p>
+
+    <script>
+$( ""p"" ).add( ""div"" )</script>
+</body>
+</html>") + "</textarea>");
+            items.Add().Expanded(true).Text("Result").Content("<div id='result'></div>").Encoded(true);
+
+        }).Deferred()
+
+
+)
+@(Html.Kendo().Button().Name("Test").Content("Test").Events(e => e.Click("testClick")).Deferred())
+
+@section scripts
+    {
+    <script type="text/javascript">
+        function testClick() {
+            var div = $("#result");
+            var editor = $('.CodeMirror')[0].CodeMirror;
+            var html = editor.getValue();
+            div.html(html);
+        }
+    </script>
+}
+
+<div>DIV</div>
+<p>P<button>BUTTON</button></p>
+
+<iframe name="Dojo output" sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts" style="transform: translateZ(0px);">
+    #document
+    <!doctype html>
+    <html lang=" en">
+    <head>
+        <meta charset=" utf-8">
+        <title>all demo</title>
+        <script src=" https//code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div>DIV</div>
+        <p>P<button>BUTTON</button></p>
+
+        <script>
+$( "p" ).add( "div" )</script>
+    </body>
+</html>
+
+</iframe>

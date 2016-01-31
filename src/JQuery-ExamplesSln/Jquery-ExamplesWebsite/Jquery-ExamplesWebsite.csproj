@@ -167,6 +167,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TraversingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -367,6 +368,7 @@
     <Content Include="Views\home\about.cshtml" />
     <Content Include="Views\home\contact.cshtml" />
     <Content Include="Views\home\index.cshtml" />
+    <Content Include="Views\Traversing\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

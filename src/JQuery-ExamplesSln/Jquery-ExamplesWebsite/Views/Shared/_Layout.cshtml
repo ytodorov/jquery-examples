@@ -23,5 +23,27 @@
     <script src="@Fingerprint.Tag("/scripts/bundle.js")"></script>
     @Html.Kendo().DeferredScripts()
     @RenderSection("scripts", required: false)
+
+   
+    <script type="text/javascript">
+        $("a[rel='nofollow']").click(function (event) {
+            event.preventDefault();
+            var href = $(this).attr("href");
+            $.post(
+                {
+                    url: "/Home/GetJqueryData",
+                    data: { jurl: href }
+                    
+                }).done(function (json) {
+                    var res = $(json).find(".signature");
+                    $(".k-info-colored").html(res.first().html());
+                });
+
+        });
+       
+
+
+    </script>
+
 </body>
 </html>
